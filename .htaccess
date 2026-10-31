@@ -1,0 +1,12 @@
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# Yalnızca herkese açık giriş noktası index.php'dir.
+# Hassas klasörler ayrıca kendi .htaccess dosyalarıyla korunur.
+<FilesMatch "^(composer\.(json|lock)|.*\.(sql|md|log))$">
+    Require all denied
+</FilesMatch>
