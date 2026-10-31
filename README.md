@@ -2,6 +2,11 @@
 
 PHP 8 ve MySQL ile geliştirilmiş, tek yöneticili ve USD bazlı küçük bir domain portföy yönetim uygulaması. Bu erken aşama proje DeepSeek ve OpenCode desteğiyle geliştirilmiştir; özellikler ve dağıtım hazırlığı gözden geçirilmektedir.
 
+## English overview
+
+Domain Portfolio Manager is an early-stage, single-administrator PHP and MySQL application for tracking domain names, purchase and renewal costs, and expiration dates. It includes search, filtering, a portfolio overview, and visual expiry reminders. The application interface is currently in Turkish.
+
+The project was developed with assistance from DeepSeek and OpenCode. Its installation and security have not yet been independently verified; review the installer before using it, especially on a MySQL server with existing databases or users.
 ## Özellikler
 
 - Tek yönetici hesabıyla giriş
