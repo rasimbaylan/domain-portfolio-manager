@@ -7,6 +7,28 @@ PHP 8 ve MySQL ile geliştirilmiş, tek yöneticili ve USD bazlı küçük bir d
 Domain Portfolio Manager is an early-stage, single-administrator PHP and MySQL application for tracking domain names, purchase and renewal costs, and expiration dates. It includes search, filtering, a portfolio overview, and visual expiry reminders. The application interface is currently in Turkish.
 
 The project was developed with assistance from DeepSeek and OpenCode. Its installation and security have not yet been independently verified; review the installer before using it, especially on a MySQL server with existing databases or users.
+### Features
+
+- Add, search, filter, update, and delete domain records.
+- Track registrar, purchase and renewal costs in USD, dates, status, and notes.
+- View portfolio totals and visual reminders for upcoming or past expiration dates.
+- Manage the portfolio through a single-administrator interface.
+
+### Requirements and setup
+
+Requires PHP 8.1 or later with `pdo_mysql`, `mbstring`, and `intl`, MySQL 8.0 or later, and Apache with `.htaccess` support or the PHP development server.
+
+Before running the installer, review `bin/install.php` and use an isolated MySQL environment. The script uses the names `opencode_test` and `opencode_app`; it may modify an existing MySQL user, administrator account, or local configuration with those names.
+
+```sh
+php bin/install.php
+```
+
+The installer creates the application database, configures a restricted database user, prompts for administrator credentials, and writes `config/config.php`. The actual configuration file is excluded from version control. The application UI is currently in Turkish. For additional details, see the Turkish instructions below.
+
+**License:** [MIT](LICENSE). This is an early-stage project; installation and security have not been independently verified.
+
+---
 ## Özellikler
 
 - Tek yönetici hesabıyla giriş
