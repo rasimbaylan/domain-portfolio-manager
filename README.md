@@ -114,3 +114,7 @@ Bu komut yönetici kullanıcı adını ve şifresini günceller, uygulama verita
 - Tablolar: `admins`, `domains`
 
 Kurulum betiği yukarıdaki isimleri kullanır. Aynı isimli veritabanı, kullanıcı veya yönetici hesabı zaten varsa betiğin davranışını önceden inceleyin.
+
+## Lisans
+
+Bu proje [MIT lisansı](LICENSE) ile sunulmaktadır.
